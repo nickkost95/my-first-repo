@@ -1,0 +1,4 @@
+# the getignore file specifics the names of files 
+#that we don't want to track in version control
+
+__pycahce__

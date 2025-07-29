@@ -1,16 +1,11 @@
 # my-first-repo
 
-Hello.
+## Usage
 
-This is the README.md file. It uses the markdown language.
+Play a game of rock, paper, scissors:
 
-Here is a list:
-
-  + Item 1
-  + Item 2
-  + Item 3
-
-For more information about Markdown syntax, see the [Markdown Cheat Sheet](https://www.markdownguide.org/cheat-sheet/).
+```sh
+python app/rps.py
+```
 
 
-Here's another edit to my README
