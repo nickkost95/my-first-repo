@@ -18,13 +18,16 @@ print("COMPUTER CHOSE:", computer_choice)
 
 
 # todo: determine the winner
-if player_choice == computer_choice:
-    result = "TIME GAME"
-elif (player_choice == "rock" and computer_choice == "scissors") or \
-     (player_choice == "paper" and computer_choice == "rock") or \
-     (player_choice == "scissors" and computer_choice == "paper"):
-    result = "PLAYER WINS"
-else:
-    result = "COMPUTER WINS"
+def determine_winner(player_choice, computer_choice):
+    if player_choice == computer_choice:
+        result = "TIME GAME"
+    elif (player_choice == "rock" and computer_choice == "scissors") or \
+        (player_choice == "paper" and computer_choice == "rock") or \
+        (player_choice == "scissors" and computer_choice == "paper"):
+        result = "PLAYER WINS"
+    else:
+        result = "COMPUTER WINS"
+    return result
 
+result = determine_winner(player_choice, computer_choice)
 print(result)
