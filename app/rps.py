@@ -1,0 +1,39 @@
+# My RPS Game
+
+# THIS IS MY ROCK PAPER SCISSORS GAME
+
+import random
+
+VALID_OPTIONS = ["rock", "paper", "scissors"]
+
+def determine_winner(player_choice, computer_choice):
+    if player_choice == computer_choice:
+        result = "TIME GAME"
+    elif (player_choice == "rock" and computer_choice == "scissors") or \
+        (player_choice == "paper" and computer_choice == "rock") or \
+        (player_choice == "scissors" and computer_choice == "paper"):
+        result = "PLAYER WINS"
+    else:
+        result = "COMPUTER WINS"
+    return result
+
+if __name__ == "__main__":
+
+    print("WELCOME TO MY GAME...")
+
+    player_choice = input("Please select an option ('rock', 'paper', 'scissors'): ")
+    print("USER CHOSE:", player_choice)
+
+    # todo: validation step
+
+
+
+    computer_choice = random.choice(VALID_OPTIONS)
+    print("COMPUTER CHOSE:", computer_choice)
+
+
+    # todo: determine the winner
+
+
+    result = determine_winner(player_choice, computer_choice)
+    print(result)

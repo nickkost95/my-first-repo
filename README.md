@@ -1,16 +1,43 @@
 # my-first-repo
 
-Hello.
+# my-first-repo-summer-2025
 
-This is the README.md file. It uses the markdown language.
+## Setup
 
-Here is a list:
+Create and activate a virtual environment:
 
-  + Item 1
-  + Item 2
-  + Item 3
+```sh
+conda create -n my-first-repo python=3.11
 
-For more information about Markdown syntax, see the [Markdown Cheat Sheet](https://www.markdownguide.org/cheat-sheet/).
+conda activate my-first-repo
+```
 
+Install packages:
 
-Here's another edit to my README
+```sh
+# pip install pytest
+
+pip install -r requirements.txt
+```
+
+## Usage
+
+Play a game of rock, paper scissors:
+
+```sh
+# only works if this file does NOT import from other local py files:
+python app/rps.py
+
+# if this file imports from other local py files:
+python -m app.rps
+```
+
+## Tests
+
+Run the tests:
+
+```sh
+# find all the tests and run them:
+pytest
+```
+
