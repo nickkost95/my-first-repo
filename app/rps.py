@@ -2,22 +2,10 @@
 
 # THIS IS MY ROCK PAPER SCISSORS GAME
 
-print("WELCOME TO MY GAME...")
-
-player_choice = input("Please select an option ('rock', 'paper', 'scissors'): ")
-print("USER CHOSE:", player_choice)
-
-# todo: validation step
-
 import random
 
 VALID_OPTIONS = ["rock", "paper", "scissors"]
 
-computer_choice = random.choice(VALID_OPTIONS)
-print("COMPUTER CHOSE:", computer_choice)
-
-
-# todo: determine the winner
 def determine_winner(player_choice, computer_choice):
     if player_choice == computer_choice:
         result = "TIME GAME"
@@ -29,5 +17,23 @@ def determine_winner(player_choice, computer_choice):
         result = "COMPUTER WINS"
     return result
 
-result = determine_winner(player_choice, computer_choice)
-print(result)
+if __name__ == "__main__":
+
+    print("WELCOME TO MY GAME...")
+
+    player_choice = input("Please select an option ('rock', 'paper', 'scissors'): ")
+    print("USER CHOSE:", player_choice)
+
+    # todo: validation step
+
+
+
+    computer_choice = random.choice(VALID_OPTIONS)
+    print("COMPUTER CHOSE:", computer_choice)
+
+
+    # todo: determine the winner
+
+
+    result = determine_winner(player_choice, computer_choice)
+    print(result)

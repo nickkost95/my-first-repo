@@ -7,9 +7,9 @@
 Create and activate a virtual environment:
 
 ```sh
-conda create -n my-first-env-2025 python=3.11
+conda create -n my-first-repo python=3.11
 
-conda activate my-first-env-2025
+conda activate my-first-repo
 ```
 
 Install packages:
